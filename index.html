@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Frossasco - Fullstack Developer</title>
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">EF</div>
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a>
+                <a href="#valor" class="nav-link" data-es="Valor" data-en="Value">Valor</a>
+                <a href="#proyectos" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="#contacto" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a>
+                <button class="cv-btn" onclick="downloadCV()" data-es="Descargar CV" data-en="Download CV">Descargar
+                    CV</button>
+                <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 data-es="EMANUEL FROSSASCO" data-en="EMANUEL FROSSASCO">EMANUEL FROSSASCO</h1>
+            <p class="hero-subtitle" data-es="DESARROLLADOR FULLSTACK" data-en="FULLSTACK DEVELOPER">DESARROLLADOR
+                FULLSTACK</p>
+            <p class="hero-description"
+                data-es="Transformo ideas en soluciones digitales que impulsan el crecimiento empresarial. Especializado en crear aplicaciones web robustas que generan resultados medibles."
+                data-en="I transform ideas into digital solutions that drive business growth. Specialized in creating robust web applications that generate measurable results.">
+                Transformo ideas en soluciones digitales que impulsan el crecimiento empresarial. Especializado en crear
+                aplicaciones web robustas que generan resultados medibles.
+            </p>
+            <div class="cta-buttons">
+                <a href="#proyectos" class="cta-btn cta-primary" data-es="Ver Proyectos" data-en="View Projects">Ver
+                    Proyectos</a>
+                <a href="#contacto" class="cta-btn cta-secondary" data-es="Colaboremos"
+                    data-en="Let's Collaborate">Colaboremos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="valor" class="section">
+        <h2 class="section-title" data-es="VALOR QUE APORTO" data-en="VALUE I PROVIDE">VALOR QUE APORTO</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3 class="value-title" data-es="Rendimiento Optimizado" data-en="Optimized Performance">Rendimiento
+                    Optimizado</h3>
+                <p data-es="Desarrollo aplicaciones 40% más rápidas que el promedio de la industria, mejorando la experiencia del usuario y las conversiones."
+                    data-en="I develop applications 40% faster than industry average, improving user experience and conversions.">
+                    Desarrollo aplicaciones 40% más rápidas que el promedio de la industria, mejorando la experiencia
+                    del usuario y las conversiones.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3 class="value-title" data-es="ROI Comprobado" data-en="Proven ROI">ROI Comprobado</h3>
+                <p data-es="Mis soluciones han ayudado a empresas a aumentar sus ventas online en un 60% promedio durante los primeros 6 meses."
+                    data-en="My solutions have helped companies increase online sales by 60% average during the first 6 months.">
+                    Mis soluciones han ayudado a empresas a aumentar sus ventas online en un 60% promedio durante los
+                    primeros 6 meses.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <h3 class="value-title" data-es="Experiencia Mobile-First" data-en="Mobile-First Experience">Experiencia
+                    Mobile-First</h3>
+                <p data-es="El 70% del tráfico web es móvil. Creo experiencias perfectas en todos los dispositivos para maximizar tu alcance."
+                    data-en="70% of web traffic is mobile. I create perfect experiences on all devices to maximize your reach.">
+                    El 70% del tráfico web es móvil. Creo experiencias perfectas en todos los dispositivos para
+                    maximizar tu alcance.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="section-title" data-es="TECNOLOGÍAS DOMINADAS" data-en="MASTERED TECHNOLOGIES">TECNOLOGÍAS DOMINADAS
+        </h3>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>React.js</strong></div>
+            <div class="skill-item"><strong>Node.js</strong></div>
+            <div class="skill-item"><strong>JavaScript</strong></div>
+            <div class="skill-item"><strong>HTML5</strong></div>
+            <div class="skill-item"><strong>SASS</strong></div>
+            <div class="skill-item"><strong>Bootstrap</strong></div>
+            <div class="skill-item"><strong>Git</strong></div>
+            <div class="skill-item"><strong>C++</strong></div>
+            <div class="skill-item"><strong>CSS</strong></div>
+            <div class="skill-item"><strong>GitHub</strong></div>
+            <div class="skill-item"><strong>C#</strong></div>
+            <div class="skill-item"><strong>Unity</strong></div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2 class="section-title" data-es="PROYECTOS QUE GENERAN IMPACTO" data-en="MY PROJECTS">MIS PROYECTOS</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="E-Commerce Avanzado" data-en="Advanced E-Commerce">E-Commerce
+                        Avanzado</h3>
+                    <p data-es="Plataforma completa de comercio electrónico con sistema de pagos integrado"
+                        data-en="Complete e-commerce platform with integrated payment system.">
+                        Plataforma completa de comercio electrónico con sistema de pagos integrado.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">SCSS</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://manga-e-commerce.netlify.app" target="_blank" rel="noopener"
+                            class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/e-commerce.git" target="_blank" rel="noopener"
+                            target="_blank" class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="Directorio Interactivo de Anime"
+                        data-en="Interactive Anime Directory">Directorio Interactivo de Anime</h3>
+                    <p data-es="Landing page de un directorio interactivo de anime."
+                        data-en="Landing page of an interactive anime directory.">
+                        Landing page of an interactive anime directory.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">SCSS</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://anime-info-first-proyect.netlify.app" target="_blank" rel="noopener"
+                            class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/pagina-web.git" target="_blank" rel="noopener"
+                            class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="Blog de Notas" data-en="To-Do List">Blog de Notas</h3>
+                    <p data-es="Blog de notas web con la posibilidad de descargar las notas en formato PDF."
+                        data-en="Blog of notes web with the possibility of downloading the notes in PDF format.">
+                        Blog de notas web con la posibilidad de descargar las notas en formato PDF.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://emanuel-frossasco.github.io/To-Do/" target="_blank" rel="noopener"
+                            class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/To-Do" target="_blank" rel="noopener"
+                            class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="Calculadora Cientifica" data-en="Scientific Calculator">
+                        Calculadora Cientifica</h3>
+                    <p data-es="Calculadora Cientifica." data-en="Scientific Calculator.">
+                        Calculadora Cientifica.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://emanuel-frossasco.github.io/Calculator/" target="_blank" rel="noopener"
+                            class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/Calculator" target="_blank" rel="noopener"
+                            class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="Conversor de Divisas" data-en="Currency Converter">Conversor de
+                        Divisas</h3>
+                    <p data-es="App para convertir distintas divisas con cotización en tiempo real."
+                        data-en="App for converting different currencies with real-time exchange rates.">
+                        App para convertir distintas divisas con cotización en tiempo real.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://emanuel-frossasco.github.io/Conversor-de-Divisas/" target="_blank"
+                            rel="noopener" class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/Conversor-de-Divisas" target="_blank"
+                            rel="noopener" class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title" data-es="Mi agencia Web" data-en="My agency website">Mi agencia Web</h3>
+                    <p data-es="Mi agencia Web." data-en="My agency website.">
+                        Mi agencia Web.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://emanuel-frossasco.github.io/AgenciaWeb/" target="_blank" rel="noopener"
+                            class="project-link" data-es="Ver Demo" data-en="View Demo">Ver Demo</a>
+                        <a href="https://github.com/Emanuel-Frossasco/AgenciaWeb" target="_blank" rel="noopener"
+                            class="project-link" data-es="Código" data-en="Code">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="contact">
+            <h2 class="section-title" data-es="CONSTRUYAMOS ALGO INCREÍBLE JUNTOS"
+                data-en="LET'S BUILD SOMETHING INCREDIBLE TOGETHER">CONSTRUYAMOS ALGO INCREÍBLE JUNTOS</h2>
+            <p data-es="¿Tienes un proyecto en mente? ¿Necesitas escalar tu negocio digitalmente? Hablemos sobre cómo puedo ayudarte a alcanzar tus objetivos."
+                data-en="Do you have a project in mind? Need to scale your business digitally? Let's talk about how I can help you achieve your goals.">
+                ¿Tienes un proyecto en mente? ¿Necesitas escalar tu negocio digitalmente? Hablemos sobre cómo puedo
+                ayudarte a alcanzar tus objetivos.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:frossasco42@gmail.com" class="contact-link">Mail</a>
+                <a href="https://linkedin.com/in/emanuel-frossasco" target="_blank" rel="noopener"
+                    class="contact-link">LinkedIn</a>
+                <a href="https://github.com/emanuel-frossasco" target="_blank" rel="noopener"
+                    class="contact-link">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-es="&copy; 2026 Emanuel Frossasco. Todos los derechos reservados."
+            data-en="&copy; 2026 Emanuel Frossasco. All rights reserved.">
+            &copy; 2026 Emanuel Frossasco. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
