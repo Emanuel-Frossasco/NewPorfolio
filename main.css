@@ -413,11 +413,30 @@ body {
     min-height: 4.8rem;
 }
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.skills-category {
+    width: 100%;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: var(--neon-cyan);
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
-    margin-top: 3rem;
 }
 
 .skill-item {
