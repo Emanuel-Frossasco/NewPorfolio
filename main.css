@@ -450,6 +450,8 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -489,12 +491,20 @@ body {
 .project-content {
     text-align: justify;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-title {
     font-size: 1.5rem;
     color: var(--neon-cyan);
     margin-bottom: 1rem;
+    min-height: 4.8rem;
+}
+
+.project-content p {
+    flex-grow: 1;
 }
 
 .project-tech {

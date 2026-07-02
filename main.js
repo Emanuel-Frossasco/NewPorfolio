@@ -145,22 +145,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Contador animado para estadísticas
-function animateCounter(element, target, duration = 2000) {
-    let start = 0;
-    const increment = target / (duration / 16);
-
-    function updateCounter() {
-        start += increment;
-        if (start < target) {
-            element.textContent = Math.floor(start);
-            requestAnimationFrame(updateCounter);
-        } else {
-            element.textContent = target;
-        }
-    }
-    updateCounter();
-}
 
 // Easter egg: Konami Code
 let konamiCode = [];
@@ -212,27 +196,6 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-// Optimización de rendimiento: Lazy loading para imágenes
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy');
-                    imageObserver.unobserve(img);
-                }
-            }
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('img[data-src]').forEach(img => {
-            imageObserver.observe(img);
-        });
-    });
-}
 
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', () => {
